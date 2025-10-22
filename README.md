@@ -33,7 +33,7 @@ Deployment: Vercel
 
 Clone the repository and install dependencies:
 
-git clone https://github.com/yourusername/skyfare.git
+git clone https://github.com/mvdevelop/skyfare.git
 cd skyfare
 npm install
 
@@ -92,7 +92,7 @@ npm run start
 🧑‍💻 Author
 
 Developed by [mvdevelop]
-✉️ Contact: [mvdevelop.email@example.com
+✉️ Contact: [mvdevelop@gmail.com
 ]
 🌐 Website: https://skyfare.vercel.app
 
