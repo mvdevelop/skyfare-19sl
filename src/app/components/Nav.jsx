@@ -79,10 +79,20 @@ export default function Nav() {
 
                     {/* Mobile Toggle */}
                     <div className='flex justify-center items-center'>
-                        <div className='toggle-btn lg:hidden cursor-pointer' onClick={() => setIsOpen()}>
-
+                        <div className='toggle-btn lg:hidden cursor-pointer' onClick={() => setIsOpen(!isOpen)}>
+                            <FontAwesomeIcon icon={isOpen ? faTimes : faBars} className='text-[#193555] text-xl' />
                         </div>
                     </div>
+
+                    {/* Mobile Menu Dropdown */}
+                    <ul className={`lg:hidden flex flex-col items-center gap-6 bg-[#f7f7f7] shadow-md absolute left-0 w-full overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? "max-h-[500px] top-full mt-3 opacity-100 py-6" : "max-h-0 opacity-0 py-0 top-full"}`}>
+                        <li><Link href="/" className='font-[500] hover:text-black'>Home</Link></li>
+                        <li><Link href="/about" className='font-[500] hover:text-black'>About</Link></li>
+                        <li><Link href="/tour" className='font-[500] hover:text-black'>Tour</Link></li>
+                        <li><Link href="/faq" className='font-[500] hover:text-black'>Faq</Link></li>
+                        <li><Link href="/blog" className='font-[500] hover:text-black'>Blog</Link></li>
+                        <li><Link href="/contact" className='font-[500] hover:text-black'>Contact</Link></li>
+                    </ul>
                 </div>
             </nav>
         </>
