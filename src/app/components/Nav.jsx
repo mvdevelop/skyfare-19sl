@@ -1,6 +1,7 @@
 
 "use client";
 import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faUser, faBars, faTimes, faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -56,8 +57,32 @@ export default function Nav() {
                 </div>
 
                 {/* Main Nav Menu */}
-                <div className={`w-full px-[2%] sm:px-[8%] lg:px-[12%]`}>
-                    
+                <div className={`w-full px-[2%] sm:px-[8%] lg:px-[12%] text-start lg:text-center relative flex justify-between lg:justify-center nav-menu-container transition-all duration-500 ease-in-out ${isScrolled ? "bg-white" : "bg-transparent"}`}>
+
+                    {/* Logo For Mobile */}
+                    <div className='lg:hidden flex logo text-2xl uppercase font-semibold'>
+                        <a href="#" className='unbounded-font'>Sky<span className='unbounded-font'>Fare</span></a>
+                    </div>
+
+                    {/* Desktop Menu */}
+                    <ul className='nav-menu hidden lg:flex w-full justify-center items-center gap-14 py-5 relative'>
+                        <li><Link href='/' className='active font-[500] hover:text-black transition-colors duration-500'>Home</Link></li>
+                        <li><Link href='/about' className='active font-[500] text-[#697e8a] hover:text-black transition-colors duration-500'>About</Link></li>
+                        <li><Link href='/tour' className='active font-[500] text-[#697e8a] hover:text-black transition-colors duration-500'>Tour</Link></li>
+                        <div className='logo text-3xl uppercase font-semibold'>
+                            <Link href='/' className='unbounded-font'>Sky<span className='unbounded-font'>Fare</span></Link>
+                        </div>
+                        <li><Link href='/faq' className='active font-[500] text-[#697e8a] hover:text-black transition-colors duration-500'>Faq</Link></li>
+                        <li><Link href='/blog' className='active font-[500] text-[#697e8a] hover:text-black transition-colors duration-500'>Blog</Link></li>
+                        <li><Link href='/contact' className='active font-[500] text-[#697e8a] hover:text-black transition-colors duration-500'>Contact</Link></li>
+                    </ul>
+
+                    {/* Mobile Toggle */}
+                    <div className='flex justify-center items-center'>
+                        <div className='toggle-btn lg:hidden cursor-pointer' onClick={() => setIsOpen()}>
+
+                        </div>
+                    </div>
                 </div>
             </nav>
         </>
