@@ -68,11 +68,11 @@ export default function Nav() {
                     <ul className='nav-menu hidden lg:flex w-full justify-center items-center gap-14 py-5 relative'>
                         <li><Link href='/' className='active font-[500] hover:text-black transition-colors duration-500'>Home</Link></li>
                         <li><Link href='/about' className='active font-[500] text-[#697e8a] hover:text-black transition-colors duration-500'>About</Link></li>
-                        <li><Link href='/tour' className='active font-[500] text-[#697e8a] hover:text-black transition-colors duration-500'>Tour</Link></li>
+                        <li><Link href='/tours' className='active font-[500] text-[#697e8a] hover:text-black transition-colors duration-500'>Tours</Link></li>
                         <div className='logo text-3xl uppercase font-semibold'>
                             <Link href='/' className='unbounded-font'>Sky<span className='unbounded-font'>Fare</span></Link>
                         </div>
-                        <li><Link href='/faq' className='active font-[500] text-[#697e8a] hover:text-black transition-colors duration-500'>Faq</Link></li>
+                        <li><Link href='/faq' className='active font-[500] text-[#697e8a] hover:text-black transition-colors duration-500'>Faq's</Link></li>
                         <li><Link href='/blog' className='active font-[500] text-[#697e8a] hover:text-black transition-colors duration-500'>Blog</Link></li>
                         <li><Link href='/contact' className='active font-[500] text-[#697e8a] hover:text-black transition-colors duration-500'>Contact</Link></li>
                     </ul>
@@ -85,11 +85,11 @@ export default function Nav() {
                     </div>
 
                     {/* Mobile Menu Dropdown */}
-                    <ul className={`lg:hidden flex flex-col items-center gap-6 bg-[#f7f7f7] shadow-md absolute left-0 w-full overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? "max-h-[500px] top-full mt-3 opacity-100 py-6" : "max-h-0 opacity-0 py-0 top-full"}`}>
+                    <ul className={`lg:hidden flex flex-col items-start ps-10 gap-6 bg-[#f7f7f7] shadow-md absolute left-0 w-full overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? "max-h-[500px] top-full mt-3 opacity-100 py-6" : "max-h-0 opacity-0 py-0 top-full"}`}>
                         <li><Link href="/" className='font-[500] hover:text-black'>Home</Link></li>
                         <li><Link href="/about" className='font-[500] hover:text-black'>About</Link></li>
-                        <li><Link href="/tour" className='font-[500] hover:text-black'>Tour</Link></li>
-                        <li><Link href="/faq" className='font-[500] hover:text-black'>Faq</Link></li>
+                        <li><Link href="/tours" className='font-[500] hover:text-black'>Tours</Link></li>
+                        <li><Link href="/faq" className='font-[500] hover:text-black'>Faq's</Link></li>
                         <li><Link href="/blog" className='font-[500] hover:text-black'>Blog</Link></li>
                         <li><Link href="/contact" className='font-[500] hover:text-black'>Contact</Link></li>
                     </ul>
