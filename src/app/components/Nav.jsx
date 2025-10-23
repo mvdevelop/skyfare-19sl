@@ -38,14 +38,26 @@ export default function Nav() {
 
                     <div className='flex items-center justify-between lg:justify-center gap-3 text-[#727272] w-full lg:w-auto'>
                         <ul className='flex items-center gap-3'>
-                            <li></li><FontAwesomeIcon icon={faFacebook} className='text-[#8192a0]'/>
-                            <li></li><FontAwesomeIcon icon={faFlickr} className='text-[#8192a0]'/>
-                            <li></li><FontAwesomeIcon icon={faXTwitter} className='text-[#8192a0]'/>
+                            <li><FontAwesomeIcon icon={faFacebook} className='text-[#8192a0]'/></li>
+                            <li><FontAwesomeIcon icon={faFlickr} className='text-[#8192a0]'/></li>
+                            <li><FontAwesomeIcon icon={faXTwitter} className='text-[#8192a0]'/></li>
                         </ul>
-                        <ul className='flex items-center gap-3'>
-
+                        <ul className='flex items-center gap-4 ps-3'>
+                            <li className='lg:text-md text-sm cursor-pointer'>
+                                <i className="ri-lock-line pr-1 text-[#8192a0]"></i>
+                                <span>Login</span>
+                            </li>
+                            <li className='lg:text-md text-sm cursor-pointer'>
+                                <FontAwesomeIcon icon={faUser} className='text-[#8192a0]'/>
+                                <span>Sign Up</span>
+                            </li>
                         </ul>
                     </div>
+                </div>
+
+                {/* Main Nav Menu */}
+                <div className={`w-full px-[2%] sm:px-[8%] lg:px-[12%]`}>
+                    
                 </div>
             </nav>
         </>
