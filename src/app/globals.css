@@ -63,4 +63,28 @@
 .hero {
   height: 100vh;
   background: url(../assets/hero-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
 }
+
+.hero-content h1 {
+  background: linear-gradient(0deg, #697e8a 10%, #fff 120%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+} 
+
+.hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000082;
+}
+
+

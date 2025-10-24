@@ -1,17 +1,21 @@
 
 "use client";
-import React from 'react';
+import React, { useState } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-brands-svg-icons';
 
 import Image from 'next/image';
 import Link from 'next/link';
+import toursData from '../ToursData.json';
 
 export default function Index() {
 
+  const [ selectedTour, setSelectedTour ] = useState(null);
+
   return (
     <>
+      {/* Hero */}
       <div className='hero h-screen min-h-screen flex justify-center items-center z-10'>
         <div className='hero-content relative text-center'>
           <h1 className='xl:text-8xl lg:text-7xl md:text-6xl text-4xl unbounded-font font-bold text-white'>Find Your Best <br /> travels Package</h1>
@@ -24,6 +28,11 @@ export default function Index() {
             </Link>
           </button>
         </div>
+      </div>
+
+      {/* Tours */}
+      <div className='travel px-[2%] sm:px-[8%] lg:px-[12%] py-[80px] lg:py-[120px] flex flex-col gap-10 '>
+        
       </div>
     </>
   )
