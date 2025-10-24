@@ -75,6 +75,7 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
+  padding-top: 9rem;
 } 
 
 .hero:before {
