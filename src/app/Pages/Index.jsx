@@ -31,8 +31,23 @@ export default function Index() {
       </div>
 
       {/* Tours */}
-      <div className='travel px-[2%] sm:px-[8%] lg:px-[12%] py-[80px] lg:py-[120px] flex flex-col gap-10 '>
-        
+      <div className='travel px-[2%] sm:px-[8%] lg:px-[12%] py-[80px] lg:py-[120px] flex flex-col gap-10 lg:gap-14'>
+        <div className='travel-content text-center'>
+          <h1 className='unbounded-font text-4xl font-semibold pb-3'>
+            Find Out The Best Travel Choice in Asia
+          </h1>
+          <p className='w-[60%] mx-auto text-[#193555]'>
+            Choosing the best travel spot depends on what kind of adventure you’re looking for. For culture and history lovers, places like Kyoto in Japan or Siem Reap in Cambodia reveal centuries of tradition and art.
+          </p>
+        </div>
+
+        <div className='travel-wrapper grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6'>{toursData.map((tour) => (
+          <Link href={`/TourDetails/${tour.id}`} key={tour.id}>
+            <div className='travel-item rounded-xl overflow-hidden relative group transition-all duration-300'>
+              <Image src={tour.image} width={400} height={300} alt={tour.title} className='w-full h-full object-cover group-hover:scale-110 transition-transform duration-500' />
+            </div>
+          </Link>
+        ))}</div>
       </div>
     </>
   )
