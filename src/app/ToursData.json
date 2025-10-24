@@ -4,7 +4,7 @@
         "id": "1",
         "title": "Phuket",
         "location": "Thailand",
-        "price": "$ 40",
+        "price": "$ 400",
         "image": "/images/tour-image-01.webp",
         "mainImage": "/images/tour-image-01-1.avif"
     },
@@ -12,7 +12,7 @@
         "id": "2",
         "title": "Kelingking",
         "location": "Indonesia",
-        "price": "$ 20",
+        "price": "$ 200",
         "image": "/images/tour-image-02.webp",
         "mainImage": "/images/tour-image-02-1.jpg"
     },
@@ -20,7 +20,7 @@
         "id": "3",
         "title": "Mt. Bromo",
         "location": "Indonesia",
-        "price": "$ 35",
+        "price": "$ 350",
         "image": "/images/tour-image-03.jpg",
         "mainImage": "/images/tour-image-03-1.jpeg"
     },
@@ -28,7 +28,7 @@
         "id": "4",
         "title": "Old Bagan",
         "location": "Myanmar",
-        "price": "$ 18",
+        "price": "$ 180",
         "image": "/images/tour-image-04.webp",
         "mainImage": "/images/tour-image-01-1.jpg"
     },
@@ -36,7 +36,7 @@
         "id": "5",
         "title": "Ubud",
         "location": "Indonesia",
-        "price": "$ 18",
+        "price": "$ 180",
         "image": "/images/tour-image-05.webp",
         "mainImage": "/images/tour-image-01-1.jpg"
     },
@@ -44,7 +44,7 @@
         "id": "6",
         "title": "Marina Bay",
         "location": "Singapore",
-        "price": "$ 24",
+        "price": "$ 240",
         "image": "/images/tour-image-06.webp",
         "mainImage": "/images/tour-image-01-1.jpg"
     },
@@ -52,7 +52,7 @@
         "id": "7",
         "title": "Mt. Fuji",
         "location": "Japan",
-        "price": "$ 48",
+        "price": "$ 480",
         "image": "/images/tour-image-07.webp",
         "mainImage": "/images/tour-image-01-1.jpg"
     },
@@ -60,7 +60,7 @@
         "id": "8",
         "title": "Padar Island",
         "location": "Indonesia",
-        "price": "$ 26",
+        "price": "$ 260",
         "image": "/images/tour-image-08.webp",
         "mainImage": "/images/tour-image-01-1.jpeg"
     }
