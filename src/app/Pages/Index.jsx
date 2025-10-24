@@ -19,7 +19,9 @@ export default function Index() {
             Planning for a trip ? We will organize your trip with the best places and within best budget!
           </p>
           <button className='btn bg-white group text-[#193555] hover:bg-[#193555] font-bold px-6 w-auto py-4 rounded-full cursor-pointer transition-colors duration-300'>
-            <Link href="#" className='unbounded-font text-sm xl:text-md uppercase group-hover:text-white'></Link>
+            <Link href="#" className='unbounded-font text-sm xl:text-md uppercase group-hover:text-white transition-colors duration-300 tracking-wider'>
+              View All Tours
+            </Link>
           </button>
         </div>
       </div>
