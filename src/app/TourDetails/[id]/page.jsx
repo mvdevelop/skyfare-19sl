@@ -7,9 +7,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight, faClose, faLocationDot, faUser, faUsers } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 
-import toursData from '../../../ToursData.json';
+import toursData from '../../ToursData.json';
 import { notFound } from 'next/navigation';
-import BookingSidebar from './sidebar';  
+//import BookingSidebar from './sidebar';  
 
 export default async function ToursDetails({params}) {
 
@@ -26,13 +26,22 @@ export default async function ToursDetails({params}) {
         </h2>
         <ul className="text-white z-10 flex items-center gap-8 section-list">
           <li className='text-sm relative'>
-            <Link href='/'>Home</Link>
+            <Link href='#'>Home</Link>
           </li>
           <li className='text-sm relative'>
             <FontAwesomeIcon icon={faAngleRight} className='absolute -left-6 top-0.5'/>
-            <Link href='/'>Home</Link>
+            <Link href='#' className=''>TourDetails</Link>
           </li>
         </ul>
+      </div>
+
+      <div className='tour-details-container w-full flex flex-col lg:flex-row justify-between items-start px-[2%] sm:px-[8%] lg:px-[12%] py-[50px] lg:py-[90px] gap-5 relative'>
+        <div className='xl:w-[70%] lg:w-[60%] w-full relative'>
+          <div className='relative w-full h-[400px]'>
+            <Image src={tour.mainImage} alt={tour.title} fill className='object-cover rounded-xl' />
+          </div>
+          <div className='tour-details'></div>
+        </div>
       </div>
     </>
   )

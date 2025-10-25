@@ -7,7 +7,7 @@ import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 import Image from 'next/image';
 import Link from 'next/link';
-import toursData from '../ToursData.json';
+import toursData from './ToursData.json';
 
 export default function Index() {
 
