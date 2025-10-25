@@ -40,7 +40,50 @@ export default async function ToursDetails({params}) {
           <div className='relative w-full h-[400px]'>
             <Image src={tour.mainImage} alt={tour.title} fill className='object-cover rounded-xl' />
           </div>
-          <div className='tour-details'></div>
+          <div className='tour-details-content pt-4'>
+            <div className='flex justify-between items-center'>
+              <div>
+                <h2 className='text-xl sm:text-3xl font-[500] pb-1'>{tour.title}</h2>
+                <span className='text-[#94a3b8] text-sm'>
+                  <FontAwesomeIcon icon={faLocationDot} />
+                  {tour.location}
+                </span>
+              </div>
+              <h4 className='text-xl font-semibold unbounded-font text-right'>
+                <span className='text-gray-500 text-xs font-normal'>
+                  Start from
+                </span>
+                <br />
+                {tour.price}
+              </h4>
+            </div>
+
+            <h4 className='text-lg sm:text-xl font-semibold pb-3 pt-4'>Tour Descriptions:</h4>
+            <p className='text-[#94a3b8] text-sm pb-2'>
+              This is a wonderful trip to {tour.title}, located in {tour.location}. Enjoy the culture, food, and breathtaking sights. Price starts from{" "}
+              {tour.price}.
+            </p>
+            <p className='text-[#94a3b8] text-sm pb-2'>
+              Experience an unforgettable adventure where every moment brings something new — from vibrant local traditions to stunning natural landscapes. Whether you’re seeking relaxation, excitement, or discovery, this destination has it all.
+            </p>
+            <h4 className='text-lg sm:text-xl font-semibold pb-4 pt-4'>Leave A Comment:</h4>
+            <form className="contact-form w-full">
+              <div className='w-full gap-3 flex items-center flex-col lg:flex-row mb-5'>
+                <div className='flex flex-col w-full'>
+                  <label className='pb-1 text-md font-[500]'>Your Name:</label>
+                  <input type="text" placeholder='Name :' className='border-2 border-gray-100 outline-0 rounded-md' required />
+                </div>
+                <div className='flex flex-col w-full'>
+                  <label className='pb-1 text-md font-[500]'>Your Email:</label>
+                  <input type="text" placeholder='Email :' className='border-2 border-gray-100 outline-0 rounded-md' required />
+                </div>
+                <div className='flex flex-col'>
+                  <label className='pb-1 text-md font-[500]'>Your Comment:</label>
+                  <textarea placeholder='Message :' className='border-2 border-gray-100 outline-0 rounded-md' required />
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </>
