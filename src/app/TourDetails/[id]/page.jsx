@@ -1,5 +1,5 @@
 
-"use client";
+//"use client";
 import React from 'react';
 
 import Link from 'next/link';
@@ -9,7 +9,7 @@ import Image from 'next/image';
 
 import toursData from '../../ToursData.json';
 import { notFound } from 'next/navigation';
-//import BookingSidebar from './sidebar';  
+import BookingSidebar from './sidebar';  
 
 export default async function ToursDetails({params}) {
 
@@ -81,10 +81,15 @@ export default async function ToursDetails({params}) {
                   <label className='pb-1 text-md font-[500]'>Your Comment:</label>
                   <textarea placeholder='Message :' className='border-2 border-gray-100 outline-0 rounded-md' required />
                 </div>
+                <button type='submit' className='btn text-white bg-[#193555] font-bold px-6 w-full py-4 rounded-md cursor-pointer transition-colors duration-300 mt-5'>
+                  <Link href='#' className='text-sm xl:text-md uppercase transition-colors duration-300 tracking-wider'>Send Message</Link>
+                </button>
               </div>
             </form>
           </div>
         </div>
+
+        <BookingSidebar tour={tour} />
       </div>
     </>
   )

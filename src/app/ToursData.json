@@ -30,7 +30,7 @@
         "location": "Myanmar",
         "price": "$ 180",
         "image": "/images/tour-image-04.webp",
-        "mainImage": "/images/tour-image-01-1.jpg"
+        "mainImage": "/images/tour-image-04-1.jpg"
     },
     {
         "id": "5",
@@ -38,7 +38,7 @@
         "location": "Indonesia",
         "price": "$ 180",
         "image": "/images/tour-image-05.webp",
-        "mainImage": "/images/tour-image-01-1.jpg"
+        "mainImage": "/images/tour-image-05-1.jpg"
     },
     {
         "id": "6",
@@ -46,7 +46,7 @@
         "location": "Singapore",
         "price": "$ 240",
         "image": "/images/tour-image-06.webp",
-        "mainImage": "/images/tour-image-01-1.jpg"
+        "mainImage": "/images/tour-image-06-1.jpg"
     },
     {
         "id": "7",
@@ -54,7 +54,7 @@
         "location": "Japan",
         "price": "$ 480",
         "image": "/images/tour-image-07.webp",
-        "mainImage": "/images/tour-image-01-1.jpg"
+        "mainImage": "/images/tour-image-07-1.jpg"
     },
     {
         "id": "8",
@@ -62,6 +62,6 @@
         "location": "Indonesia",
         "price": "$ 260",
         "image": "/images/tour-image-08.webp",
-        "mainImage": "/images/tour-image-01-1.jpeg"
+        "mainImage": "/images/tour-image-08-1.jpeg"
     }
 ]
