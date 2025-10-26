@@ -9,6 +9,17 @@ import Image from 'next/image';
 import Link from 'next/link';
 import toursData from './ToursData.json';
 
+import about01 from '../../public/images/about-01.webp';
+import about02 from '../../public/images/about-02.webp';
+import about03 from '../../public/images/about-03.webp';
+import author01 from '../../public/images/author-01.webp';
+import author02 from '../../public/images/author-02.webp';
+import author03 from '../../public/images/author-03.webp';
+import author04 from '../../public/images/author-04.webp';
+import blogPage01 from '../assets/blog-Page-01.webp';
+import blogPage02 from '../assets/blog-Page-02.webp';
+import blogPage03 from '../assets/blog-Page-03.webp';
+
 export default function Index() {
 
   const [ selectedTour, setSelectedTour ] = useState(null);
@@ -75,9 +86,12 @@ export default function Index() {
           <div className='lg:w-[50%]'>
             <div className='about-section flex flex-col'>
               <div className='about-heading lg:px-[12%]'>
-                <h1 className='text-2xl xl:text-4xl font-bold mb-4'>Begin Your</h1>
-                <p className='mb-3 w-[90%] text-[#7a7a7a] text-sm'>Lorem</p>
-                <p className='w-[90%] text-[#7a7a7a] text-sm'>Lorem</p>
+                <h1 className='text-2xl xl:text-4xl font-bold mb-4'>Begin Your New Life Experience With Exploring New Destination</h1>
+                <p className='mb-3 w-[90%] text-[#7a7a7a] text-sm'>Beginning a new life experience often starts with the courage to explore new destinations. Traveling allows you to step out of your comfort zone and discover different cultures, traditions, and perspectives.</p>
+                <p className='w-[90%] text-[#7a7a7a] text-sm'>Each journey introduces you to new people, unique landscapes, and unforgettable memories that help shape who you are. Exploring new places can be a transformative experience that broadens your understanding of the world and yourself, inspiring personal growth and a deeper appreciation for diversity.</p>
+              </div>
+              <div className='about-image mt-8 hidden lg:flex'>
+                <Image src={about01} alt='about01' className='rounded-r-2xl w-[45%] h-[600px] object-cover absolute left-0' />
               </div>
             </div>
           </div>
