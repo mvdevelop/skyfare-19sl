@@ -88,4 +88,45 @@
   background-color: #00000082;
 }
 
+.travel-item {
+  height: 350px;
+}
 
+.travel-item:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(253,187,45,0) 100%); */
+  z-index: 0;
+}
+
+/* Tour Details */
+
+.section-banner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: url(../assets/section-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.section-banner:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: #000000be; */
+}
+
+.section-list {
+  position: absolute;
+  bottom: 30px;
+}

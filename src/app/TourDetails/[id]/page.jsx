@@ -22,7 +22,7 @@ export default async function ToursDetails({params}) {
     <>
       <div className='section-banner px-[2%] sm:px-[8%] lg:px-[12%] py-[50px] lg:py-[90px] min-h-[450px] lg:min-h-[500px] z-20 relative'>
         <h2 className='text-4xl font-normal z-10 relative text-white text-center w-full unbounded-font'>
-          Wildness of Paris
+          {tour.title}
         </h2>
         <ul className="text-white z-10 flex items-center gap-8 section-list">
           <li className='text-sm relative'>
@@ -81,7 +81,7 @@ export default async function ToursDetails({params}) {
                   <label className='pb-1 text-md font-[500]'>Your Comment:</label>
                   <textarea placeholder='Message :' className='border-2 border-gray-100 outline-0 rounded-md' required />
                 </div>
-                <button type='submit' className='btn text-white bg-[#193555] font-bold px-6 w-full py-4 rounded-md cursor-pointer transition-colors duration-300 mt-5'>
+                <button type='submit' className='btn text-white bg-[#193555] w-full font-bold px-6 py-4 rounded-md cursor-pointer transition-colors duration-300 mt-5'>
                   <Link href='#' className='text-sm xl:text-md uppercase transition-colors duration-300 tracking-wider'>Send Message</Link>
                 </button>
               </div>
