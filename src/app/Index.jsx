@@ -74,7 +74,11 @@ export default function Index() {
         <div className='flex flex-col lg:flex-row w-full gap-5 lg:gap-0'>
           <div className='lg:w-[50%]'>
             <div className='about-section flex flex-col'>
-              
+              <div className='about-heading lg:px-[12%]'>
+                <h1 className='text-2xl xl:text-4xl font-bold mb-4'>Begin Your</h1>
+                <p className='mb-3 w-[90%] text-[#7a7a7a] text-sm'>Lorem</p>
+                <p className='w-[90%] text-[#7a7a7a] text-sm'>Lorem</p>
+              </div>
             </div>
           </div>
         </div>
