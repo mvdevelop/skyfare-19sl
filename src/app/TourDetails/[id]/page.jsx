@@ -68,7 +68,7 @@ export default async function ToursDetails({params}) {
             </p>
             <h4 className='text-lg sm:text-xl font-semibold pb-4 pt-4'>Leave A Comment:</h4>
             <form className="contact-form w-full">
-              <div className='w-full gap-3 flex items-center flex-col lg:flex-row mb-5'>
+              <div className='w-full gap-3 flex items-center flex-col mb-5'>
                 <div className='flex flex-col w-full'>
                   <label className='pb-1 text-md font-[500]'>Your Name:</label>
                   <input type="text" placeholder='Name :' className='border-2 border-gray-100 outline-0 rounded-md' required />

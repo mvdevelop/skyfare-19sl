@@ -68,6 +68,17 @@ export default function Index() {
           </Link>
         ))}</div>
       </div>
+
+      {/* About */}
+      <div className='about py-[50px] lg:py-[90px] px-[2%] sm:px-[8%] lg:px-[12%]'>
+        <div className='flex flex-col lg:flex-row w-full gap-5 lg:gap-0'>
+          <div className='lg:w-[50%]'>
+            <div className='about-section flex flex-col'>
+              
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   )
 }

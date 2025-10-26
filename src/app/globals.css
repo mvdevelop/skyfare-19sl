@@ -129,4 +129,31 @@
 .section-list {
   position: absolute;
   bottom: 30px;
+  left: 12%;
 }
+
+.contact-form input {
+  height: 45px;
+  padding-left: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #193555;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0f243d;
+}
+
+/* Contact Banner */
+
+
