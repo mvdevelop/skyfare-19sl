@@ -16,9 +16,9 @@ import author01 from '../../public/images/author-01.webp';
 import author02 from '../../public/images/author-02.webp';
 import author03 from '../../public/images/author-03.webp';
 import author04 from '../../public/images/author-04.webp';
-import blogPage01 from '../assets/blog-Page-01.webp';
-import blogPage02 from '../assets/blog-Page-02.webp';
-import blogPage03 from '../assets/blog-Page-03.webp';
+import blogPage01 from '../assets/Blog-Page-01.webp';
+import blogPage02 from '../assets/Blog-Page-02.webp';
+import blogPage03 from '../assets/Blog-Page-03.webp';
 
 export default function Index() {
 
