@@ -16,6 +16,7 @@ import author01 from '../../public/images/author-01.webp';
 import author02 from '../../public/images/author-02.webp';
 import author03 from '../../public/images/author-03.webp';
 import author04 from '../../public/images/author-04.webp';
+
 import blogPage01 from '../assets/Blog-Page-01.webp';
 import blogPage02 from '../assets/Blog-Page-02.webp';
 import blogPage03 from '../assets/Blog-Page-03.webp';
@@ -111,7 +112,27 @@ export default function Index() {
                 <p className='text-[#7a7a7a]'>Customers are thrilled with the unforgettable tour experience and the exceptional service from start to finish.</p>
               </div>
             </div>
+            <div className='about-travel'>
+              <Image src={about02} alt='About02' className='rounded-2xl mt-10 object-cover' />
+            </div>
+            <div className='about-place flex sm:flex-row flex-col items-start gap-5 mt-10'>
+              <Image src={about03} alt='About03' className='rounded-2xl h-[350px] sm:w-[50%] w-full object-cover' />
+              <div className='bg-[#000] text-white p-6 rounded-2xl flex justify-between gap-20 sm:w-[300px] w-full'>
+                <div className='customers'>
+                  <h1 className='text-white text-2xl mt-2 mb-3'>Join Our Asian Travel Trip</h1>
+                  <p className='text-[#7a7a7a]'>Embark on an unforgettable journey across Asia and discover breathtaking destinations, rich culture, and amazing adventures.</p>
+                </div>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+
+      {/* Testimonial */}
+      <div className='testimonials bg-[#0e0700] px-[2%] sm:px-[8%] lg:px-[12%] py-[50px] lg:py-[90px]'>
+        <div className='pb-10 testimonials-content flex justify-between lg:flex-row gap-3 lg:gap-0 items-start w-full'>
+          <h2 className='xl:w-[50%] w-full text-white text-4xl leading-tight unbounded-font'>Discover A Mesmerizing Nature Landscape & Stunning Culture</h2>
+          <div className='xl:w-[50%] w-full text-white text-4xl leading-tight'></div>
         </div>
       </div>
     </>
