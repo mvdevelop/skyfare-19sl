@@ -156,4 +156,30 @@
 
 /* Contact Banner */
 
+.contact-banner {
+  height: 700px;
+  background: url(../../public/images/Contact-banner-bg.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
 
+.contact-banner:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #00000082;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+@media (max-width: 767px) {
+  .contact-banner {
+    height: 500px;
+  }
+}
