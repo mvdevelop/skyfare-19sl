@@ -91,7 +91,24 @@ export default function Index() {
                 <p className='w-[90%] text-[#7a7a7a] text-sm'>Each journey introduces you to new people, unique landscapes, and unforgettable memories that help shape who you are. Exploring new places can be a transformative experience that broadens your understanding of the world and yourself, inspiring personal growth and a deeper appreciation for diversity.</p>
               </div>
               <div className='about-image mt-8 hidden lg:flex'>
-                <Image src={about01} alt='about01' className='rounded-r-2xl w-[45%] h-[600px] object-cover absolute left-0' />
+                <Image src={about01} alt='About01' className='rounded-r-2xl w-[45%] h-[600px] object-cover absolute left-0' />
+              </div>
+            </div>
+          </div>
+          <div className='lg:w-[50%]'>
+            <div className='bg-[#000] text-white p-6 rounded-2xl flex md:flex-row justify-between md:gap-20'>
+              <div className='autor-sec'>
+                <div className='flex -space-x-3'>
+                  <Image src={author01} alt='Author01' className='w-12 h-12 rounded-full border-2 border-black' />
+                  <Image src={author02} alt='Author02' className='w-12 h-12 rounded-full border-2 border-black' />
+                  <Image src={author03} alt='Author03' className='w-12 h-12 rounded-full border-2 border-black' />
+                  <Image src={author04} alt='Author04' className='w-12 h-12 rounded-full border-2 border-black' />
+                </div>
+                <h2 className='text-white mt-5 text-3xl'>1234 &nbsp; +</h2>
+              </div>
+              <div className='customers'>
+                <h1 className='text-white text-2xl mt-2 mb-3'>Customer Love The Tour Experience</h1>
+                <p className='text-[#7a7a7a]'>Customers are thrilled with the unforgettable tour experience and the exceptional service from start to finish.</p>
               </div>
             </div>
           </div>
