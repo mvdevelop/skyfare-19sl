@@ -9,6 +9,7 @@ config.autoAddCss = false;
 import "remixicon/fonts/remixicon.css";
 
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 const unbounded = Unbounded({
   variable: "--font-unbounded",
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
       >
         <Nav />
         {children}
+        <Footer />
       </body>
     </html>
   );
