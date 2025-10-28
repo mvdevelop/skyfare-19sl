@@ -118,7 +118,7 @@ export default function Index() {
           </div>
           <div className='lg:w-[50%]'>
             <div className='bg-[#000] text-white p-6 rounded-2xl flex md:flex-row justify-between md:gap-20'>
-              <div className='autor-sec'>
+              <div className='autor-sec p-2'>
                 <div className='flex -space-x-3'>
                   <Image src={author01} alt='Author01' className='w-12 h-12 rounded-full border-2 border-black' />
                   <Image src={author02} alt='Author02' className='w-12 h-12 rounded-full border-2 border-black' />
@@ -127,7 +127,7 @@ export default function Index() {
                 </div>
                 <h2 className='text-white mt-5 text-3xl'>1234 &nbsp; +</h2>
               </div>
-              <div className='customers'>
+              <div className='customers p-2'>
                 <h1 className='text-white text-2xl mt-2 mb-3'>Customer Love The Tour Experience</h1>
                 <p className='text-[#7a7a7a]'>Customers are thrilled with the unforgettable tour experience and the exceptional service from start to finish.</p>
               </div>
