@@ -7,21 +7,21 @@ import { faAngleDown, faAngleUp, faLocationDot } from '@fortawesome/free-solid-s
 
 import Image from 'next/image';
 import Link from 'next/link';
-import toursData from './ToursData.json';
+import toursData from '../ToursData.json';
 
-import about01 from '../../public/images/about-01.webp';
-import about02 from '../../public/images/about-02.webp';
-import about03 from '../../public/images/about-03.webp';
-import author01 from '../../public/images/author-01.webp';
-import author02 from '../../public/images/author-02.webp';
-import author03 from '../../public/images/author-03.webp';
-import author04 from '../../public/images/author-04.webp';
+import about01 from '../../../public/images/about-01.webp';
+import about02 from '../../../public/images/about-02.webp';
+import about03 from '../../../public/images/about-03.webp';
+import author01 from '../../../public/images/author-01.webp';
+import author02 from '../../../public/images/author-02.webp';
+import author03 from '../../../public/images/author-03.webp';
+import author04 from '../../../public/images/author-04.webp';
 
-import blogPage01 from '../assets/Blog-Page-01.webp';
-import blogPage02 from '../assets/Blog-Page-02.webp';
-import blogPage03 from '../assets/Blog-Page-03.webp';
+import blogPage01 from '../../assets/Blog-Page-01.webp';
+import blogPage02 from '../../assets/Blog-Page-02.webp';
+import blogPage03 from '../../assets/Blog-Page-03.webp';
 
-import user from '../assets/user.png';
+import user from '../../assets/user.png';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';

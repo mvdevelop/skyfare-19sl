@@ -57,12 +57,17 @@ export default function Footer() {
                   Subscribe to our newsletter for the latest updates and offers.
                 </p>
                 <form className='flex items-center border border-[#ffffff4d] rounded-full mt-4 overflow-hidden'>
-                  <input type="email" placeholder='Your Email Address' className='flex-1 px-4 py-3 text-sm bg-transparent text-white placeholder-[#ffffff80] font-semibold' />
-                  <button className='bg-white text-black font-semibold xl:px-6 py-3 hover:bg-gray-200 md:px-2'>SIGN UP</button>
+                  <input type="email" placeholder="Your Email Address" className="flex-1 w-full px-4 py-3 text-sm bg-transparent text-white placeholder-white/70 font-semibold focus:outline-none focus:ring-2 focus:ring-white/60" />
+                  <button className="w-full sm:w-auto bg-white cursor-pointer text-black font-semibold px-6 py-3 hover:bg-gray-200 transition-all duration-200"> SIGN UP </button>
                 </form>
               </div>
             </div>
           </div>
+        </div>
+        <div className='border-t border-[#ffffff33] mt-12 py-8'>
+          <p className='mt-3 md:mt-0 text-[#ffffff99] text-center'>
+            © Copyright 2025 SkyFare. All Rights Reserved by <Link href='#' className='font-bold text-white'>19SL</Link>
+          </p>
         </div>
       </div>
     </>

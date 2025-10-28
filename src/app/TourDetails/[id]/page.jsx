@@ -77,9 +77,9 @@ export default async function ToursDetails({params}) {
                   <label className='pb-1 text-md font-[500]'>Your Email:</label>
                   <input type="text" placeholder='Email :' className='border-2 border-gray-100 outline-0 rounded-md' required />
                 </div>
-                <div className='flex flex-col'>
+                <div className='flex flex-col w-full'>
                   <label className='pb-1 text-md font-[500]'>Your Comment:</label>
-                  <textarea placeholder='Message :' className='border-2 border-gray-100 outline-0 rounded-md' required />
+                  <textarea placeholder='Message :' className='border-2 border-gray-100 outline-0 rounded-md p-2' required />
                 </div>
                 <button type='submit' className='btn text-white bg-[#193555] w-full font-bold px-6 py-4 rounded-md cursor-pointer transition-colors duration-300 mt-5'>
                   <Link href='#' className='text-sm xl:text-md uppercase transition-colors duration-300 tracking-wider'>Send Message</Link>
