@@ -1,4 +1,3 @@
-
 "use client";
 import React, { useState } from "react";
 
@@ -14,7 +13,15 @@ import tourCompany01 from "../../../public/images/Tour-Company-01.webp";
 import tourCompany02 from "../../../public/images/Tour-Company-02.webp";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDoorClosed, faMoneyBillWave, faShieldHalved, faAngleRight, faAngleDown, faAngleUp, faPlay } from "@fortawesome/free-solid-svg-icons";
+import {
+  faDoorClosed,
+  faMoneyBillWave,
+  faShieldHalved,
+  faAngleRight,
+  faAngleDown,
+  faAngleUp,
+  faPlay,
+} from "@fortawesome/free-solid-svg-icons";
 
 import adventure01 from "../../../public/images/adventure-01.webp";
 import Link from "next/link";
@@ -183,47 +190,123 @@ export default function About() {
       </div>
 
       {/* Tour Company */}
-      <div className='tour-company px-[2%] sm:px-[8%] lg:px-[12%] py-[50px] lg:py-[90px] flex flex-col items-center justify-center'>
-        <div className='tour-content'>
-          <h1 className='text-3xl lg:text-5xl text-center font-semibold mb-5'>We Are The Most popular <br /> Travel & Tour Company</h1>
-          <p className='text-[#7a7a7a] text-center text-[15px]'>We take pride in offering exceptional travel experiences that create lasting memories for our customers. And we are committed to continuously improving our services to meet their evolving needs.</p>
+      <div className="tour-company px-[2%] sm:px-[8%] lg:px-[12%] py-[50px] lg:py-[90px] flex flex-col items-center justify-center">
+        <div className="tour-content">
+          <h1 className="text-3xl lg:text-5xl text-center font-semibold mb-5">
+            We Are The Most popular <br /> Travel & Tour Company
+          </h1>
+          <p className="text-[#7a7a7a] text-center text-[15px]">
+            We take pride in offering exceptional travel experiences that create
+            lasting memories for our customers. And we are committed to
+            continuously improving our services to meet their evolving needs.
+          </p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-15">
           <div className="flex gap-6 p-[20px] border-1 border-[#ececec] rounded-2xl">
-            <div className='tour-icon'>
-              <i className='ri-map-2-line text-white text-2xl'></i>
+            <div className="tour-icon">
+              <i className="ri-map-2-line text-white text-2xl"></i>
             </div>
-            <div className='tour-text'>
-              <h2 className='font-semibold text-2xl'>928 +</h2>
-              <span className='text-[#7a7a7a]'>Travel Destination</span>
-            </div>
-          </div>
-          <div className="flex gap-6 p-[20px] border-1 border-[#ececec] rounded-2xl">
-            <div className='tour-icon'>
-              <i className='ri-map-2-line text-white text-2xl'></i>
-            </div>
-            <div className='tour-text'>
-              <h2 className='font-semibold text-2xl'>1020 +</h2>
-              <span className='text-[#7a7a7a]'>Tour Partner</span>
+            <div className="tour-text">
+              <h2 className="font-semibold text-2xl">928 +</h2>
+              <span className="text-[#7a7a7a]">Travel Destination</span>
             </div>
           </div>
           <div className="flex gap-6 p-[20px] border-1 border-[#ececec] rounded-2xl">
-            <div className='tour-icon'>
-              <i className='ri-map-2-line text-white text-2xl'></i>
+            <div className="tour-icon">
+              <i className="ri-map-2-line text-white text-2xl"></i>
             </div>
-            <div className='tour-text'>
-              <h2 className='font-semibold text-2xl'>540 +</h2>
-              <span className='text-[#7a7a7a]'>Hotel & Accommodation</span>
+            <div className="tour-text">
+              <h2 className="font-semibold text-2xl">1020 +</h2>
+              <span className="text-[#7a7a7a]">Tour Partner</span>
+            </div>
+          </div>
+          <div className="flex gap-6 p-[20px] border-1 border-[#ececec] rounded-2xl">
+            <div className="tour-icon">
+              <i className="ri-map-2-line text-white text-2xl"></i>
+            </div>
+            <div className="tour-text">
+              <h2 className="font-semibold text-2xl">540 +</h2>
+              <span className="text-[#7a7a7a]">Hotel & Accommodation</span>
             </div>
           </div>
         </div>
-        <div className='flex flex-col lg:flex-row gap-4 mt-10'>
+        <div className="flex flex-col lg:flex-row gap-4 mt-10">
           <div className="w-full lg:w-2/3">
-            <Image src={tourCompany01} alt='tour-company-01' className="rounded-2xl" />
+            <Image
+              src={tourCompany01}
+              alt="tour-company-01"
+              className="rounded-2xl"
+            />
           </div>
-          <div className="w-full lg:w-2/3">
-            <Image src={tourCompany02} alt='tour-company-02' className="rounded-2xl" />
+          <div className="w-full lg:w-1/3">
+            <Image
+              src={tourCompany02}
+              alt="tour-company-02"
+              className="rounded-2xl h-[100%] object-cover"
+            />
           </div>
+        </div>
+      </div>
+
+      {/* Experience (FAQ) */}
+      <div className="experience px-[2%] sm:px-[8%] lg:px-[12%] py-[50px] lg:py-[90px] bg-[#0e0700]">
+        <div className="experience-content flex justify-between lg:flex-row flex-col gap-3 lg:gap-0 items-start w-full">
+          <h2 className="xl:w-[50%] w-full text-white text-2xl md:text-5xl leading-tight unbounded-font">
+            Enjoy Our Best Quality Tour & Experience
+          </h2>
+          <div className="xl:w-[40%] w-full">
+            <p className="text-[#ffffff91] pb-5 text-sm">
+              Discover unforgettable moments with our premium tours, designed to
+              give you comfort, adventure, and authentic experiences every step
+              of the way.
+            </p>
+            <button className="btn bg-white group text-[#193555] hover:bg-[#193555] font-bold px-6 w-auto py-4 rounded-full cursor-pointer transition-colors duration-300">
+              <Link
+                href="#"
+                className="unbounded-font text-sm xl:text-md uppercase group-hover:text-white transition-colors duration-300 tracking-wider"
+              >
+                Learn More
+              </Link>
+            </button>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 gap-8 mt-10 mx-auto w-[100%] lg:mx-auto lg:w-[80%]">
+          {faqData.map((item, index) => {
+            const isOpen = openIndex === index;
+            const contentRef = useRef(null);
+            const [height, setHeight] = useState(0);
+
+            useEffect(() => {
+              if (isOpen && contentRef.current) {
+                setHeight(contentRef.current.scrollHeight);
+              } else {
+                setHeight(0);
+              }
+            }, [isOpen]);
+            return (
+              <div key={index} className="border-b border-gray-700">
+                <button
+                  onClick={() => toggle(index)}
+                  className="w-full cursor-pointer text-left flex justify-between items-center py-4 font-semibold text-white"
+                >
+                  <span>{item.question}</span>
+                  <FontAwesomeIcon
+                    icon={isOpen ? faAngleUp : faAngleDown}
+                    className="ml-2"
+                  />
+                </button>
+                <div
+                  style={{ maxHeight: `${height}px` }}
+                  className="transition-all duration-500 ease-in-out overflow-hidden"
+                >
+                  <div ref={contentRef}>
+                    <p className="text-gray-400 px-2 pb-4">{item.answer}</p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </>
