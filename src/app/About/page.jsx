@@ -217,6 +217,14 @@ export default function About() {
             </div>
           </div>
         </div>
+        <div className='flex flex-col lg:flex-row gap-4 mt-10'>
+          <div className="w-full lg:w-2/3">
+            <Image src={tourCompany01} alt='tour-company-01' className="rounded-2xl" />
+          </div>
+          <div className="w-full lg:w-2/3">
+            <Image src={tourCompany02} alt='tour-company-02' className="rounded-2xl" />
+          </div>
+        </div>
       </div>
     </>
   );
