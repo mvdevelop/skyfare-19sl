@@ -35,10 +35,10 @@ export default function Footer() {
               <div className='md:col-span-3 space-y-3'>
                 <h2 className='text-white text-2xl unbounded-font mb-6'>Page</h2>
                 <ul className='space-y-2 list-none'>
-                  <li><Link href='#' className='text-[#ffffffb3] hover:text-white transition-colors duration-300'>About Us</Link></li>
+                  <li><Link href='/About' className='text-[#ffffffb3] hover:text-white transition-colors duration-300'>About Us</Link></li>
                   <li><Link href='#' className='text-[#ffffffb3] hover:text-white transition-colors duration-300'>Services</Link></li>
-                  <li><Link href='#' className='text-[#ffffffb3] hover:text-white transition-colors duration-300'>FAQ</Link></li>
-                  <li><Link href='#' className='text-[#ffffffb3] hover:text-white transition-colors duration-300'>Contact Us</Link></li>
+                  <li><Link href='/Faq' className='text-[#ffffffb3] hover:text-white transition-colors duration-300'>FAQ</Link></li>
+                  <li><Link href='/Contact' className='text-[#ffffffb3] hover:text-white transition-colors duration-300'>Contact Us</Link></li>
                 </ul>
               </div>
               <div className='md:col-span-3 space-y-3'>
@@ -46,7 +46,7 @@ export default function Footer() {
                 <ul className='space-y-2 list-none'>
                   <li><Link href='#' className='text-[#ffffffb3] hover:text-white transition-colors duration-300'>Privacy Policy</Link></li>
                   <li><Link href='#' className='text-[#ffffffb3] hover:text-white transition-colors duration-300'>Career</Link></li>
-                  <li><Link href='#' className='text-[#ffffffb3] hover:text-white transition-colors duration-300'>Blog</Link></li>
+                  <li><Link href='/Blog' className='text-[#ffffffb3] hover:text-white transition-colors duration-300'>Blog</Link></li>
                   <li><Link href='#' className='text-[#ffffffb3] hover:text-white transition-colors duration-300'>Term & Condition</Link></li>
                 </ul>
               </div>

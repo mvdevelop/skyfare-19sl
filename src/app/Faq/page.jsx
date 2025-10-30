@@ -88,6 +88,69 @@ export default function Faq() {
         </ul>
       </div>
 
+      {/* Experience (FAQ) */}
+      <div className="experience px-[2%] sm:px-[8%] lg:px-[12%] py-[50px] lg:py-[90px]">
+        <div className="experience-content flex justify-between lg:flex-row flex-col gap-3 lg:gap-0 items-start w-full text-black">
+          <h2 className="xl:w-[50%] w-full text-2xl md:text-5xl leading-tight unbounded-font">
+            Enjoy Our Best Quality Tour & Experience
+          </h2>
+          <div className="xl:w-[40%] w-full">
+            <p className="text-[#000000b3] pb-5 text-sm">
+              Discover unforgettable moments with our premium tours, designed to
+              give you comfort, adventure, and authentic experiences every step
+              of the way.
+            </p>
+            <button className="btn bg-[#193555] group text-white hover:bg-white hover:text-[#193555] font-bold px-6 w-auto py-4 rounded-full cursor-pointer transition-colors duration-300">
+              <Link
+                href="#"
+                className="unbounded-font text-sm xl:text-md uppercase group-hover:text-[#193555] transition-colors duration-300 tracking-wider"
+              >
+                Learn More
+              </Link>
+            </button>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 gap-8 mt-10 mx-auto w-[100%] lg:mx-auto lg:w-[80%]">
+          {faqData.map((item, index) => {
+            const isOpen = openIndex === index;
+            const contentRef = useRef(null);
+            const [height, setHeight] = useState(0);
+
+            useEffect(() => {
+              if (isOpen && contentRef.current) {
+                setHeight(contentRef.current.scrollHeight);
+              } else {
+                setHeight(0);
+              }
+            }, [isOpen]);
+
+            return (
+              <div key={index} className="border-b border-gray-300">
+                <button
+                  onClick={() => toggle(index)}
+                  className="w-full cursor-pointer text-left flex justify-between items-center py-4 font-semibold text-black"
+                >
+                  <span>{item.question}</span>
+                  <FontAwesomeIcon
+                    icon={isOpen ? faAngleUp : faAngleDown}
+                    className="ml-2"
+                  />
+                </button>
+                <div
+                  style={{ maxHeight: `${height}px` }}
+                  className="transition-all duration-500 ease-in-out overflow-hidden"
+                >
+                  <div ref={contentRef}>
+                    <p className="text-gray-700 px-2 pb-4">{item.answer}</p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      
       {/* Testimonial */}
       <div className="testimonials bg-[#0e0700] px-[2%] sm:px-[8%] lg:px-[12%] py-[50px] lg:py-[90px]">
         <div className="pb-10 testimonials-content flex justify-between lg:flex-row gap-3 lg:gap-0 items-start w-full">
@@ -232,69 +295,6 @@ export default function Faq() {
             </div>
           </SwiperSlide>
         </Swiper>
-      </div>
-
-      {/* Experience (FAQ) */}
-      <div className="experience px-[2%] sm:px-[8%] lg:px-[12%] py-[50px] lg:py-[90px]">
-        <div className="experience-content flex justify-between lg:flex-row flex-col gap-3 lg:gap-0 items-start w-full text-black">
-          <h2 className="xl:w-[50%] w-full text-2xl md:text-5xl leading-tight unbounded-font">
-            Enjoy Our Best Quality Tour & Experience
-          </h2>
-          <div className="xl:w-[40%] w-full">
-            <p className="text-[#000000b3] pb-5 text-sm">
-              Discover unforgettable moments with our premium tours, designed to
-              give you comfort, adventure, and authentic experiences every step
-              of the way.
-            </p>
-            <button className="btn bg-[#193555] group text-white hover:bg-white hover:text-[#193555] font-bold px-6 w-auto py-4 rounded-full cursor-pointer transition-colors duration-300">
-              <Link
-                href="#"
-                className="unbounded-font text-sm xl:text-md uppercase group-hover:text-[#193555] transition-colors duration-300 tracking-wider"
-              >
-                Learn More
-              </Link>
-            </button>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 gap-8 mt-10 mx-auto w-[100%] lg:mx-auto lg:w-[80%]">
-          {faqData.map((item, index) => {
-            const isOpen = openIndex === index;
-            const contentRef = useRef(null);
-            const [height, setHeight] = useState(0);
-
-            useEffect(() => {
-              if (isOpen && contentRef.current) {
-                setHeight(contentRef.current.scrollHeight);
-              } else {
-                setHeight(0);
-              }
-            }, [isOpen]);
-
-            return (
-              <div key={index} className="border-b border-gray-300">
-                <button
-                  onClick={() => toggle(index)}
-                  className="w-full cursor-pointer text-left flex justify-between items-center py-4 font-semibold text-black"
-                >
-                  <span>{item.question}</span>
-                  <FontAwesomeIcon
-                    icon={isOpen ? faAngleUp : faAngleDown}
-                    className="ml-2"
-                  />
-                </button>
-                <div
-                  style={{ maxHeight: `${height}px` }}
-                  className="transition-all duration-500 ease-in-out overflow-hidden"
-                >
-                  <div ref={contentRef}>
-                    <p className="text-gray-700 px-2 pb-4">{item.answer}</p>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
       </div>
     </>
   );

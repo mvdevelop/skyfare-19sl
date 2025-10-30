@@ -40,7 +40,7 @@ export default function Blog() {
 
       {/* Blog */}
       <div className="blog px-[2%] sm:px-[8%] lg:px-[12%] py-[50px] lg:py-[90px]">
-        <div className="w-full pb-5">
+        {/* <div className="w-full pb-5">
           <h1 className="unbounded-font text-4xl font-semibold pb-3">
             Our Latest Blog
           </h1>
@@ -48,7 +48,7 @@ export default function Blog() {
             Read our latest blog posts and stay inspired with travel tips,
             destination guides, and exciting stories from around the world.
           </p>
-        </div>
+        </div> */}
 
         <div className="blog-wrapper grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
           <div className="blog-card">

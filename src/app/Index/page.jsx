@@ -55,7 +55,7 @@ export default function Index() {
             Planning for a trip ? We will organize your trip with the best places and within best budget!
           </p>
           <button className='btn bg-white group text-[#193555] hover:bg-[#193555] font-bold px-6 w-auto py-4 rounded-full cursor-pointer transition-colors duration-300'>
-            <Link href="#" className='unbounded-font text-sm xl:text-md uppercase group-hover:text-white transition-colors duration-300 tracking-wider'>
+            <Link href="/Tours" className='unbounded-font text-sm xl:text-md uppercase group-hover:text-white transition-colors duration-300 tracking-wider'>
               View All Tours
             </Link>
           </button>
@@ -318,7 +318,7 @@ export default function Index() {
           </h1>
           <p className='pt-6 text-[#ffffffb3] pb-10 text-center'></p>
           <button className='btn bg-white group text-[#193555] hover:bg-[#193555] font-bold px-6 w-auto py-4 rounded-full cursor-pointer transition-colors duration-300'>
-            <Link href='#' className='unbounded-font text-md xl:text-xl uppercase group-hover:text-white transition-colors duration-300 tracking-wider'>
+            <Link href='/Contact' className='unbounded-font text-md xl:text-xl uppercase group-hover:text-white transition-colors duration-300 tracking-wider'>
               Contact Us
             </Link>
           </button>
