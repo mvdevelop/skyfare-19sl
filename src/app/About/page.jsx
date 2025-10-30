@@ -313,6 +313,11 @@ export default function About() {
           <FontAwesomeIcon icon={faPlay} className='play-btn' />
         </div>
       </div>
+
+      {/* Adventure */}
+      <div className="adventure flex flex-col lg:flex-row px-[2%] sm:px-[8%] lg:px-[12%] py-[50px] lg:py-[90px] gap-10">
+        <div className='w-full lg:w-[45%]'></div>
+      </div>
     </>
   );
 }
