@@ -1,5 +1,6 @@
+
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 import about01 from "../../../public/images/about-01.webp";
 import about02 from "../../../public/images/about-02.webp";
@@ -213,7 +214,7 @@ export default function About() {
           </div>
           <div className="flex gap-6 p-[20px] border-1 border-[#ececec] rounded-2xl">
             <div className="tour-icon">
-              <i className="ri-map-2-line text-white text-2xl"></i>
+              <i className="ri-car-line text-white text-2xl"></i>
             </div>
             <div className="tour-text">
               <h2 className="font-semibold text-2xl">1020 +</h2>
@@ -222,7 +223,7 @@ export default function About() {
           </div>
           <div className="flex gap-6 p-[20px] border-1 border-[#ececec] rounded-2xl">
             <div className="tour-icon">
-              <i className="ri-map-2-line text-white text-2xl"></i>
+              <i className="ri-home-2-line text-white text-2xl"></i>
             </div>
             <div className="tour-text">
               <h2 className="font-semibold text-2xl">540 +</h2>
@@ -307,6 +308,9 @@ export default function About() {
               </div>
             );
           })}
+        </div>
+        <div className='banner mx-0 w-[100%] lg:mx-auto lg:w-[80%]'>
+          <FontAwesomeIcon icon={faPlay} className='play-btn' />
         </div>
       </div>
     </>

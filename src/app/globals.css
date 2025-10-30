@@ -183,3 +183,23 @@
     height: 500px;
   }
 }
+
+/* About Page */
+
+.tour-icon i {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #0e0700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  height: 550px;
+  background-image: url(../assets/banner.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+}
