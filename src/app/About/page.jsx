@@ -14,15 +14,7 @@ import tourCompany01 from "../../../public/images/Tour-Company-01.webp";
 import tourCompany02 from "../../../public/images/Tour-Company-02.webp";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faDoorClosed,
-  faMoneyBillWave,
-  faShieldHalved,
-  faAngleRight,
-  faAngleDown,
-  faAngleUp,
-  faPlay,
-} from "@fortawesome/free-solid-svg-icons";
+import { faDoorClosed, faMoneyBillWave, faShieldHalved, faAngleRight, faAngleDown, faAngleUp,faPlay } from "@fortawesome/free-solid-svg-icons";
 
 import adventure01 from "../../../public/images/adventure-01.webp";
 import Link from "next/link";
@@ -70,6 +62,7 @@ export default function About() {
 
   return (
     <>
+      {/* Page Title */}
       <div className="section-banner px-[2%] sm:px-[8%] lg:px-[12%] py-[50px] lg:py-[90px] min-h-[450px] lg:min-h-[500px] z-20 relative">
         <h2 className="text-4xl font-normal z-10 relative text-white text-center w-full unbounded-font">
           About Us
@@ -318,7 +311,37 @@ export default function About() {
       <div className="adventure flex flex-col lg:flex-row px-[2%] sm:px-[8%] lg:px-[12%] py-[50px] lg:py-[90px] gap-10">
         <div className='w-full lg:w-[45%] adventure-content'>
           <h1 className='text-4xl mb-2 font-semibold'>Experience The New Adventure</h1>
-          <p className='text-[#7a7a7a] mb-6 text-sm'>Join us for an unforgettable journey into the wild, where adventure awaits at every turn.</p>
+          <p className='text-[#7a7a7a] mb-6 text-sm'>Join us for an unforgettable journey into the wild, where adventure awaits at every turn. We promise to deliver an experience like no other, filled with excitement and discovery.</p>
+          <div className='adventure-section flex gap-5 mb-4'>
+            <div className='adventure-icons'>
+              <FontAwesomeIcon icon={faShieldHalved} className='text-white bg-[#0e0700] p-3 rounded-full text-[20px]' />
+              <div className='adventure-text'>
+                <h2 className='mb-1 font-semibold text-xl'>Safe Traveling</h2>
+                <p className='text-[#7a7a7a]'>Travel with peace of mind knowing that your safety is our top priority. We adhere to the highest safety standards to ensure a secure journey.</p>
+              </div>
+            </div>
+          </div>
+          <div className='adventure-section flex gap-5 mb-4'>
+            <div className='adventure-icons'>
+              <FontAwesomeIcon icon={faMoneyBillWave} className='text-white bg-[#0e0700] p-3 rounded-full text-[20px]' />
+              <div className='adventure-text'>
+                <h2 className='mb-1 font-semibold text-xl'>Affordable Price</h2>
+                <p className='text-[#7a7a7a]'>We believe that adventure should be accessible to everyone. Our competitive pricing ensures that you can explore the world without breaking the bank.</p>
+              </div>
+            </div>
+          </div>
+          <div className='adventure-section flex gap-5 mb-4'>
+            <div className='adventure-icons'>
+              <FontAwesomeIcon icon={faDoorClosed} className='text-white bg-[#0e0700] p-3 rounded-full text-[20px]' />
+              <div className='adventure-text'>
+                <h2 className='mb-1 font-semibold text-xl'>Comfort Accomodation</h2>
+                <p className='text-[#7a7a7a]'>Experience the ultimate in comfort with our premium accommodations. We offer a range of lodging options designed to provide a restful and enjoyable stay.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='w-full lg:w-[55%] adventure-image h-[550px]'>
+          <Image src={adventure01} alt='adventure01' className='rounded-2xl h-[100%] object-cover' />
         </div>
       </div>
     </>
