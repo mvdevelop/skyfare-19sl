@@ -316,7 +316,10 @@ export default function About() {
 
       {/* Adventure */}
       <div className="adventure flex flex-col lg:flex-row px-[2%] sm:px-[8%] lg:px-[12%] py-[50px] lg:py-[90px] gap-10">
-        <div className='w-full lg:w-[45%]'></div>
+        <div className='w-full lg:w-[45%] adventure-content'>
+          <h1 className='text-4xl mb-2 font-semibold'>Experience The New Adventure</h1>
+          <p className='text-[#7a7a7a] mb-6 text-sm'>Join us for an unforgettable journey into the wild, where adventure awaits at every turn.</p>
+        </div>
       </div>
     </>
   );
