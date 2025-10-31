@@ -61,14 +61,25 @@ export default function Contact() {
             <form>
               <div className='mb-5'>
                 <label className='text-sm text-[#fff] mb-2 uppercase'>Comments / Questions</label>
-                <textarea rows='5' placeholder='Your Message Here' className='w-full p-3 rounded-[10px] border border-[#ffffff80] focus:outline-none'>
-                  
-                </textarea>
+                <textarea rows='5' placeholder='Your Message Here' className='w-full p-3 rounded-[10px] border border-[#ffffff80] focus:outline-none mt-2 text-[#7a7a7a]'></textarea>
               </div>
+              <div className='flex flex-col md:flex-row md:space-x-6 mb-5'>
+                <div className='flex-1 mb-5 md:mb-0'>
+                  <label className='text-sm text-[#fff] mb-2 uppercase'>Name</label>
+                  <input type="text" placeholder='Your Name' className='w-full p-3 rounded-[10px] border border-[#ffffff80] focus:outline-none mt-2 text-[#7a7a7a]' />
+                </div>
+                <div className='flex-1 mb-5 md:mb-0'>
+                  <label className='text-sm text-[#fff] mb-2 uppercase'>Email</label>
+                  <input type="email" placeholder='Your Email Address' className='w-full p-3 rounded-[10px] border border-[#ffffff80] focus:outline-none mt-2 text-[#7a7a7a]' />
+                </div>
+              </div>
+              <button type='submit' className='mt-5 uppercase w-full px-6 py-3 bg-[#fff] rounded-[50px] font-semibold cursor-pointer'>Send Message</button>
             </form>
           </div>
         </div>
       </div>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235198.68142636976!2d-43.44598205!3d-22.91413075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bde559108a05b%3A0x50dc426c672fd24e!2sRio%20de%20Janeiro%2C%20RJ!5e0!3m2!1spt-BR!2sbr!4v1761874017185!5m2!1spt-BR!2sbr" width="100%" height="500" loading="lazy"></iframe>
     </>
   )
 }
