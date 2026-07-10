@@ -35,8 +35,8 @@ const connectToDatabase = async () => {
     mongoose.set('debug', NODE_ENV === 'development');
 
   } catch (error) {
-    console.error('❌ Erro ao conectar ao MongoDB:', error);
-    process.exit(1);
+    console.error('⚠️  MongoDB não disponível:', (error as Error).message);
+    console.log('🔧 Servidor será iniciado sem banco de dados.');
   }
 };
 

@@ -1,0 +1,13 @@
+[00:00:11.844] Server  LOG     
+[00:00:11.845] Server  LOG        We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+[00:00:11.845] Server  LOG        The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+[00:00:11.846] Server  LOG        	- include was updated to add '.next\dev/types/**/*.ts'
+[00:00:11.846] Server  LOG        	- include was updated to add '.next\dev/types/**/*.ts'
+[00:00:11.846] Server  LOG     
+[00:00:12.938] Server  LOG      ✓ Ready in 10.6s
+[00:00:17.322] Server  LOG      ○ Compiling / ...
+[00:00:49.076] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:05:01.761] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:55.739] Server  LOG      ○ Compiling /Tours ...
+[00:23:38.654] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
