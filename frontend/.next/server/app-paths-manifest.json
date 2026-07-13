@@ -6,6 +6,7 @@
   "/Contact/page": "app/Contact/page.js",
   "/Faq/page": "app/Faq/page.js",
   "/Index/page": "app/Index/page.js",
+  "/Login/page": "app/Login/page.js",
   "/TourDetails/[id]/page": "app/TourDetails/[id]/page.js",
   "/Tours/page": "app/Tours/page.js",
   "/page": "app/page.js"

@@ -86,12 +86,12 @@ declare module 'next/cache' {
      * ```
      *   stale:      300 seconds (5 minutes)
      *   revalidate: 604800 seconds (1 week)
-     *   expire:     2592000 seconds (30 days)
+     *   expire:     2592000 seconds (1 month)
      * ```
      * 
      * This cache may be stale on clients for 5 minutes before checking with the server.
      * If the server receives a new request after 1 week, start revalidating new values in the background.
-     * If this entry has no traffic for 30 days it will expire. The next request will recompute it.
+     * If this entry has no traffic for 1 month it will expire. The next request will recompute it.
      */
     export function cacheLife(profile: "weeks"): void
     
@@ -99,12 +99,12 @@ declare module 'next/cache' {
      * Cache this `"use cache"` for a timespan defined by the `"max"` profile.
      * ```
      *   stale:      300 seconds (5 minutes)
-     *   revalidate: 2592000 seconds (30 days)
+     *   revalidate: 2592000 seconds (1 month)
      *   expire:     31536000 seconds (365 days)
      * ```
      * 
      * This cache may be stale on clients for 5 minutes before checking with the server.
-     * If the server receives a new request after 30 days, start revalidating new values in the background.
+     * If the server receives a new request after 1 month, start revalidating new values in the background.
      * If this entry has no traffic for 365 days it will expire. The next request will recompute it.
      */
     export function cacheLife(profile: "max"): void

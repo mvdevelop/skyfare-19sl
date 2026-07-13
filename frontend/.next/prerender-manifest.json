@@ -1,6 +1,30 @@
 {
   "version": 4,
   "routes": {
+    "/": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "next-action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/_global-error": {
       "experimentalBypassFor": [
         {
@@ -16,7 +40,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/_global-error",
       "dataRoute": "/_global-error.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -42,7 +65,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/_not-found",
       "dataRoute": "/_not-found.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -67,7 +89,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/About",
       "dataRoute": "/About.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -92,7 +113,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/Blog",
       "dataRoute": "/Blog.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -117,7 +137,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/Contact",
       "dataRoute": "/Contact.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -142,7 +161,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/Faq",
       "dataRoute": "/Faq.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -167,7 +185,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/Index",
       "dataRoute": "/Index.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -177,7 +194,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/": {
+    "/Login": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -190,9 +207,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/",
-      "dataRoute": "/index.rsc",
-      "prefetchDataRoute": null,
+      "srcRoute": "/Login",
+      "dataRoute": "/Login.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -217,7 +233,6 @@
       "initialRevalidateSeconds": false,
       "srcRoute": "/Tours",
       "dataRoute": "/Tours.rsc",
-      "prefetchDataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -231,8 +246,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "da075118bb34f3d5135a94fb0923cd32",
-    "previewModeSigningKey": "bc60c26458529ff47551d7a013bd0bd4ce186360a4017b4f44f7b03073044954",
-    "previewModeEncryptionKey": "2f32ade937301d2ad4723ef4b73b6baa72bbdb0a2066e539c6efa5d5d095aabc"
+    "previewModeId": "e602d2efb334078a68f9c14f9151a381",
+    "previewModeSigningKey": "1363cc3977753a2dd6e3ee54f3870f1bd29b0087e8f5ec940b5362be18322e60",
+    "previewModeEncryptionKey": "1d22ef070e64a5e457dc24be21c89d5f016893f7ce9435e39b814043b03b0667"
   }
 }

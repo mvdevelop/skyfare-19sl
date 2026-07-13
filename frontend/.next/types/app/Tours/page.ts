@@ -1,8 +1,8 @@
-// File: C:\Users\marco\Programming\git-clones\skyfare-19sl\frontend\src\app\Tours\page.tsx
+// File: C:\Users\marco\Programming\git-clones\skyfare-19sl\frontend\src\app\Tours\page.jsx
 import * as entry from '../../../../src/app/Tours/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-import type { PrefetchForTypeCheckInternal } from 'next/dist/build/segment-config/app/app-segment-config.js'
+import type { InstantConfigForTypeCheckInternal } from 'next/dist/build/segment-config/app/app-segment-config.js'
 
 type TEntry = typeof import('../../../../src/app/Tours/page.js')
 
@@ -15,7 +15,8 @@ checkFields<Diff<{
   default: Function
   config?: {}
   generateStaticParams?: Function
-  unstable_prefetch?: PrefetchForTypeCheckInternal
+  unstable_instant?: InstantConfigForTypeCheckInternal
+  unstable_dynamicStaleTime?: number
   revalidate?: RevalidateRange<TEntry> | false
   dynamic?: 'auto' | 'force-dynamic' | 'error' | 'force-static'
   dynamicParams?: boolean

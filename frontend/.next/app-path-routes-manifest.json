@@ -6,6 +6,7 @@
   "/Contact/page": "/Contact",
   "/Faq/page": "/Faq",
   "/Index/page": "/Index",
+  "/Login/page": "/Login",
   "/TourDetails/[id]/page": "/TourDetails/[id]",
   "/Tours/page": "/Tours",
   "/page": "/"
