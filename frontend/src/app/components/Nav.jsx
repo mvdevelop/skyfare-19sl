@@ -4,14 +4,16 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faUser, faBars, faTimes, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faUser, faBars, faTimes, faPhone, faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faFlickr } from '@fortawesome/free-brands-svg-icons';
 import { faXTwitter } from '@fortawesome/free-brands-svg-icons/faXTwitter';
+import { useAuth } from '@/contexts/AuthContext';
 
 export default function Nav() {
 
     const [ isOpen, setIsOpen ] = useState(false);
     const [ isScrolled, setIsScrolled ] = useState(false);
+    const { user, isAuthenticated, logout } = useAuth();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -44,14 +46,33 @@ export default function Nav() {
                             <li><FontAwesomeIcon icon={faXTwitter} className='text-[#8192a0]'/></li>
                         </ul>
                         <ul className='flex items-center gap-4 ps-3'>
-                            <li className='lg:text-md text-sm cursor-pointer'>
-                                <i className="ri-lock-line pr-1 text-[#8192a0]"></i>
-                                <span>Login</span>
-                            </li>
-                            <li className='lg:text-md text-sm cursor-pointer'>
-                                <FontAwesomeIcon icon={faUser} className='text-[#8192a0]'/>
-                                <span>Sign Up</span>
-                            </li>
+                            {isAuthenticated ? (
+                                <>
+                                    <li className='lg:text-md text-sm flex items-center gap-2'>
+                                        <FontAwesomeIcon icon={faUser} className='text-[#8192a0]'/>
+                                        <span className='font-medium text-[#193555]'>{user?.name}</span>
+                                    </li>
+                                    <li className='lg:text-md text-sm cursor-pointer hover:text-red-500 transition-colors' onClick={logout}>
+                                        <FontAwesomeIcon icon={faRightFromBracket} className='text-[#8192a0]'/>
+                                        <span> Logout</span>
+                                    </li>
+                                </>
+                            ) : (
+                                <>
+                                    <li className='lg:text-md text-sm'>
+                                        <Link href='/Login' className='hover:text-black transition-colors'>
+                                            <i className="ri-lock-line pr-1 text-[#8192a0]"></i>
+                                            <span>Login</span>
+                                        </Link>
+                                    </li>
+                                    <li className='lg:text-md text-sm'>
+                                        <Link href='/Login' className='hover:text-black transition-colors'>
+                                            <FontAwesomeIcon icon={faUser} className='text-[#8192a0]'/>
+                                            <span> Sign Up</span>
+                                        </Link>
+                                    </li>
+                                </>
+                            )}
                         </ul>
                     </div>
                 </div>
@@ -85,13 +106,32 @@ export default function Nav() {
                     </div>
 
                     {/* Mobile Menu Dropdown */}
-                    <ul className={`lg:hidden flex flex-col items-start ps-10 gap-6 bg-[#f7f7f7] shadow-md absolute left-0 w-full overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? "max-h-[500px] top-full mt-3 opacity-100 py-6" : "max-h-0 opacity-0 py-0 top-full"}`}>
+                    <ul className={`lg:hidden flex flex-col items-start ps-10 gap-6 bg-[#f7f7f7] shadow-md absolute left-0 w-full overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? "max-h-[600px] top-full mt-3 opacity-100 py-6" : "max-h-0 opacity-0 py-0 top-full"}`}>
                         <li><Link href="/" className='font-[500] hover:text-black'>Home</Link></li>
                         <li><Link href="/About" className='font-[500] hover:text-black'>About</Link></li>
                         <li><Link href="/Tours" className='font-[500] hover:text-black'>Tours</Link></li>
                         <li><Link href="/Faq" className='font-[500] hover:text-black'>Faq's</Link></li>
                         <li><Link href="/Blog" className='font-[500] hover:text-black'>Blog</Link></li>
                         <li><Link href="/Contact" className='font-[500] hover:text-black'>Contact</Link></li>
+                        <li className='border-t border-[#ddd] pt-4 w-full'>
+                            {isAuthenticated ? (
+                                <div className='flex items-center justify-between'>
+                                    <span className='font-medium text-[#193555] flex items-center gap-2'>
+                                        <FontAwesomeIcon icon={faUser} className='text-[#8192a0]'/>
+                                        {user?.name}
+                                    </span>
+                                    <button onClick={logout} className='text-sm text-red-500 hover:text-red-700 cursor-pointer flex items-center gap-2'>
+                                        <FontAwesomeIcon icon={faRightFromBracket}/>
+                                        Logout
+                                    </button>
+                                </div>
+                            ) : (
+                                <Link href="/Login" className='font-[500] hover:text-black flex items-center gap-2'>
+                                    <i className="ri-lock-line text-[#8192a0]"></i>
+                                    Login / Sign Up
+                                </Link>
+                            )}
+                        </li>
                     </ul>
                 </div>
             </nav>

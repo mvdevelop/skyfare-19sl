@@ -10,6 +10,7 @@ import "remixicon/fonts/remixicon.css";
 
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import { AuthProvider } from "@/contexts/AuthContext";
 
 const unbounded = Unbounded({
   variable: "--font-unbounded",
@@ -37,9 +38,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         className={`${unbounded.variable} ${sora.variable} antialiased`}
       >
-        <Nav />
-        {children}
-        <Footer />
+        <AuthProvider>
+          <Nav />
+          {children}
+          <Footer />
+        </AuthProvider>
       </body>
     </html>
   );

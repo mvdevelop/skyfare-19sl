@@ -1,4 +1,4 @@
-// File: C:\Users\marco\Programming\git-clones\skyfare-19sl\frontend\src\app\Index\page.tsx
+// File: C:\Users\marco\Programming\git-clones\skyfare-19sl\frontend\src\app\Index\page.jsx
 import * as entry from '../../../../../src/app/Index/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
