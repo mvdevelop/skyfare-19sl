@@ -8,8 +8,7 @@ config.autoAddCss = false;
 
 import "remixicon/fonts/remixicon.css";
 
-import Nav from "./components/Nav";
-import Footer from "./components/Footer";
+import Shell from "./components/Shell";
 import { AuthProvider } from "@/contexts/AuthContext";
 
 const unbounded = Unbounded({
@@ -39,9 +38,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         className={`${unbounded.variable} ${sora.variable} antialiased`}
       >
         <AuthProvider>
-          <Nav />
-          {children}
-          <Footer />
+          <Shell>{children}</Shell>
         </AuthProvider>
       </body>
     </html>

@@ -32,3 +32,9 @@
 [00:44:12.593] Server  LOG      ○ Compiling /Faq ...
 [00:44:30.457] Server  LOG      ○ Compiling /TourDetails/[id] ...
 [00:44:42.388] Browser WARN    Image with src "/images/tour-image-06-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[01:03:10.138] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'call')
+[01:03:10.140] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:03:13.201] Server  LOG      ○ Compiling /Login ...
+[01:04:05.564] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:04:26.496] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:04:36.285] Browser WARN    Image with src "/_next/static/media/hero-image.756a25f6.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
