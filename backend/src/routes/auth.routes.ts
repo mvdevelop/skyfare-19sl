@@ -36,14 +36,14 @@ const loginValidation = [
 ];
 
 // Helper para gerar token JWT
-const generateToken = (id: string): string => {
+const generateToken = (id: string | { toString(): string }): string => {
   if (!process.env.JWT_SECRET) {
     throw new Error('JWT_SECRET não está configurado');
   }
 
   return jwt.sign({ id }, process.env.JWT_SECRET, {
     expiresIn: process.env.JWT_EXPIRE || '7d',
-  });
+  } as any);
 };
 
 // @desc    Registrar novo usuário

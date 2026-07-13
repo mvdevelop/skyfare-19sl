@@ -472,7 +472,7 @@ router.post('/:id/reviews', [
     }
 
     // Adicionar avaliação
-    tour.addReview(user._id.toString(), rating, comment);
+    (tour as any).addReview(user._id.toString(), rating, comment);
     await tour.save();
 
     res.status(201).json({

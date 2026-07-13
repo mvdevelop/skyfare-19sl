@@ -271,7 +271,7 @@ export const createAccessToken = (userId: string): string => {
     process.env.JWT_SECRET,
     {
       expiresIn: process.env.JWT_EXPIRE || '7d',
-    }
+    } as any
   );
 };
 

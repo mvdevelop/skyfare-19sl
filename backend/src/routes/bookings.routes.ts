@@ -331,7 +331,7 @@ router.put('/:id/cancel', [
     }
 
     // Verificar se pode ser cancelada
-    if (!booking.canCancel()) {
+    if (!(booking as any).canCancel()) {
       return res.status(400).json({
         success: false,
         message: 'Esta reserva não pode ser cancelada',
