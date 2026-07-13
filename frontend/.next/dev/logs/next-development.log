@@ -21,3 +21,14 @@
 [00:31:23.764] Browser ERROR   uncaughtError: TypeError: Cannot read properties of undefined (reading 'call')
 [00:31:35.201] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [00:31:36.260] Browser ERROR   Can't perform a React state update on a component that hasn't mounted yet. This indicates that you have a side-effect in your render function that asynchronously tries to update the component. Move this work to useEffect instead.
+[00:41:03.098] Server  LOG      ○ Compiling /_error ...
+[00:41:07.659] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:41:07.659] Browser ERROR   unhandledRejection: TypeError: Cannot read properties of undefined (reading 'call')
+[00:41:07.659] Browser ERROR   unhandledRejection: TypeError: Cannot read properties of undefined (reading 'call')
+[00:41:08.592] Browser ERROR   uncaughtError: Error: Internal Next.js error: Router action dispatched before initialization.
+[00:42:06.916] Server  LOG      ○ Compiling /Tours ...
+[00:42:11.592] Server  WARN     ⚠ Fast Refresh had to perform a full reload. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:42:18.002] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:44:12.593] Server  LOG      ○ Compiling /Faq ...
+[00:44:30.457] Server  LOG      ○ Compiling /TourDetails/[id] ...
+[00:44:42.388] Browser WARN    Image with src "/images/tour-image-06-1.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
