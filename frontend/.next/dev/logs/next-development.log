@@ -1,3 +1,3 @@
-[00:10:04.778] Server  ERROR   Error: ENOENT: no such file or directory, stat 'C:\Users\marco\Programming\git-clones\skyfare-19sl\frontend\.next\dev\cache\webpack\client-development\14.pack.gz'
-[00:10:04.782] Server  ERROR    ⨯ "unhandledRejection:" Error: ENOENT: no such file or directory, stat 'C:\Users\marco\Programming\git-clones\skyfare-19sl\frontend\.next\dev\cache\webpack\client-development\14.pack.gz'
-[00:10:04.784] Server  ERROR    ⨯ "unhandledRejection: " Error: ENOENT: no such file or directory, stat 'C:\Users\marco\Programming\git-clones\skyfare-19sl\frontend\.next\dev\cache\webpack\client-development\14.pack.gz'
+{"timestamp":"00:00:21.470","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:41.989","source":"Server","level":"LOG","message":"○ Compiling / ..."}
+{"timestamp":"00:01:31.665","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
