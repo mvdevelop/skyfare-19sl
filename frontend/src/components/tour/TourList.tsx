@@ -10,6 +10,7 @@ import { Checkbox } from '@/components/ui/Checkbox';
 import { Slider } from '@/components/ui/Slider';
 import { TourCard } from './TourCard';
 import { Tour } from '@/types/tour';
+import { enhancedTourData, rawTourData } from '@/data/tourData';
 
 export interface TourListProps {
   tours: Tour[];
@@ -166,7 +167,7 @@ export function TourList({
 
   const handleSearchChange = (value: string) => {
     setSearchTerm(value);
-    set currentPage(1);
+    setCurrentPage(1);
   };
 
   const handlePriceChange = (value: number[]) => {
