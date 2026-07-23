@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --webpack",
-    "build": "next build --webpack",
+    "dev": "next dev --turbopack",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "type-check": "tsc --noEmit",
     "tsc": "tsc",
-    "tsc:watch": "tsc --watch"
+    "tsc:watch": "tsc --watch",
+    "pwa:dev": "next dev --turbopack --experimental-pwa",
+    "pwa:build": "next build --experimental-pwa",
+    "pwa:start": "next start --experimental-pwa"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.1.0",
